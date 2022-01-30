@@ -1,5 +1,8 @@
+from time import sleep
+
 # Setup
 yes_no = ["yes", "no"]
+destination = ["Tropical Island", "Dark Rainforest"]
 
 # Game Introduction
 name = input("What is your name?\n")
@@ -18,8 +21,14 @@ while response not in yes_no:
     else:
                 print("I didn't understand that.\n")
 
+sleep(1)
 print("You have just won the lottery and decided to go on an adventure and run straight to the airport for the next available flight.")
+sleep(1.5)
 print("You have two choices when you arrive at the airport.")
-destination = input("Do you want to go to a Tropical Island or a Dark Rainforest?\nTropical Island or Dark Rainforest\n")
+
+
+
+
+
 
 #Start of the Game
