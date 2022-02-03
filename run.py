@@ -1,14 +1,16 @@
 from time import sleep
+import game_files
 
 # Setup
 yes_no = ["yes", "no"]
 destination = ["Tropical Island", "Dark Rainforest"]
+directions = ["left", "right", "straight ahead"]
+island = game_files.island()
+rainforest = game_files.rainforest()
 
 # Game Introduction
 name = input("What is your name?\n")
 print("Hi " + name + "!")
-# Setup
-yes_no = ["yes", "no"]
 
 response = ""
 while response not in yes_no:
@@ -26,9 +28,15 @@ print("You have just won the lottery and decided to go on an adventure and run s
 sleep(1.5)
 print("You have two choices when you arrive at the airport.")
 
-
-
-
-
+response = ""
+while response not in destination:
+    response = input("Do you want to go to a Tropical Island or a Dark Rainforest?\n")
+    if response == "Tropical Island":
+        print("Great choice" + name + "! I hope you've brought your beach gear")
+    elif response == "Dark Rainforrest":
+            print("Great choice" + name + "! I hope you've brought your raincoat and wellies.")
+    else:
+        print("This destination is not available today. You've now left the airport. Goodbye!\n")
+        quit() 
 
 #Start of the Game
