@@ -1,4 +1,5 @@
 from time import sleep
+import run
 
 # Setup
 yes_no = ["yes", "no"]
@@ -6,6 +7,9 @@ directions = ["left", "right", "straight ahead"]
 accommodation = ["beach hut", "beach hotel", "on the beach under the stars"]
 
 #game start
+"""
+This is the game section for the Tropical Island portion of the game.
+"""
 
 def plane_island():
     print("You jump on the plane to go to the Tropical Island and sitting next to you is a man acting very strangely.")
@@ -30,5 +34,12 @@ while response not in accommodation:
     elif response == "on the beach under the stars":
         print("An adventurer! I like that. Please take the local bus to the spot on the beach where you want to sleep")
     else:
-        print("I don't understand that")    
+        print("I don't understand that")
+        continue
+
+def beach_hut():
+    if response == "Beach Hut":
+        print("You have reached the Beach Hut and get settled in nicely")
+        sleep(0.5)
+        print("After unwinding for a while, you decide to go exploring")
 
