@@ -7,8 +7,6 @@ response = ""
 destination = ["Tropical Island", "Dark Rainforest"]
 directions = ["left", "right", "straight ahead"]
 response = ""
-plane_island = game_files.island()
-rainforest = game_files.rainforest()
 
 # Game Introduction
 """

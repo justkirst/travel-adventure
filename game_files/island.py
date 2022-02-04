@@ -36,21 +36,17 @@ while response not in accommodation:
         print("An adventurer! I like that. Please take the local bus to the spot on the beach where you want to sleep")
     else:
         print("I don't understand that")
-        continue
 
-def beach_hut():
     if response == "Beach Hut":
         print("You have reached the Beach Hut and get settled in nicely")
         sleep(0.5)
         print("After unwinding for a while, you decide to go exploring")
 
-def beach_hotel():
     if response == "Beach Hotel":
         print("You have reached the Beach Hotel and get settled in nicely")
         sleep(0.5)
         print("After unwinding for a while, you decide to go exploring")
 
-def under_the_stars():
     if response == "on the beach under the stars":
         print("You have chosen your spot on the beach and found a safe spot for your belongings")
         sleep(0.5)
@@ -67,3 +63,6 @@ while response not in explore:
     else:
         print("I don't understand that. Let us try again.")
 
+
+
+plane_island()
