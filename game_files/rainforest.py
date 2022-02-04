@@ -26,4 +26,30 @@ def plane_rainforest():
     print("The second option is the Ecolodge that has daily yoga on the terrace. It is very peaceful and relaxing")
     print("The final option is to not bother with any accommodation and sleep in a tent under the trees. There is bound to be adventure and interesting people or animals to meet with this option")
 
-    
+while response not in accommodation:
+    response = input("Where would you like to stay?\n")
+    if response == "Treehouse":
+        print("I hope you will be safe there... The minibus outside the airport will take you straight there")
+    elif response == "Ecolodge":
+        print("I think you will have a lovely, relaxing time there... or will you? The minibus outside the airport will take you straight there")
+    elif response == "a tent under the trees":
+        print("An adventurer! I like that. Please take the minibus to the Ecolodge and walk from there to your chosen spot. You can buy a tent from the stall in arrivals")
+    else:
+        print("I don't understand that")
+
+if response == "Treehouse":
+    print("You have reached the Treehouse and get settled in nicely")
+    sleep(0.5)
+    print("After unwinding for a while, you decide to go exploring")
+
+if response == "Ecolodge":
+    print("You have reached the Ecolodge and get settled in nicely")
+    sleep(0.5)
+    print("After unwinding for a while, you decide to go exploring")    
+
+if response == "a tent under the trees":
+    print("You have reached the rainforest and chose your spot to set up your tent. You get set up and settled in nicely")
+    sleep(0.5)
+    print("After unwinding for a while, you decide to go exploring")
+
+plane_rainforest()
