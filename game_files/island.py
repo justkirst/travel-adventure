@@ -63,6 +63,41 @@ while response not in explore:
     else:
         print("I don't understand that. Let us try again.")
 
+if response == "local town":
+    print("You arrive in the town centre and notice the man from the plane sitting at a nearby cafe")
+    sleep(0.5)
+    print("You watch him for a while and decide to go to the cafe and have a drink at a table next to him.")
+    print("You secretly hope for him to notice you, so you can initiate a conversation.")
+    sleep(1)
+    print("You arrive at the cafe and order your drink. You sit next to him and watch.")
+    sleep(0.5)
+    print("You only have to wait a few minutes before he recognises you and asks your name")
+    print("You tell him your name and ask what his name is.")
+    print("The man tells you his name is Jacob and that he remembers you from the plane. He asks if you'd like to go to a local stone monument that is rich in history.")
+    sleep(0.5)
+
+print("Do you want to go and see the monument?\n")
+response = input(yes_no)
+
+while response not in yes_no:
+    print("I don't understand. Please try again")
+    response = input(yes_no)
+if response == "yes":
+    print("Jacob pays for your drink and you leave for the monument")
+elif response == "no":
+    print("Well that means it is the end of the adventure for you. Goodbye!")
+    quit()
+
+def monument():
+    print("You arrive at the monument and start to look around")
+    sleep(0.25)
+    print("All of a sudden you feel a chill down your spine and notice that Jacob has started to chant")
+    print("You are not one to believe in spirits or being possessed but it does seem that this has happened to Jacob")
+    sleep(0.5)
+    print("You look around to leave but realise that you're lost and don't know where the exit is")
+    print("What direction should you go to leave?\n")    
+
 
 
 plane_island()
+monument()
