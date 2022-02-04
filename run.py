@@ -33,7 +33,7 @@ while response not in destination:
     response = input("Do you want to go to a Tropical Island or a Dark Rainforest?\n")
     if response == "Tropical Island":
         print("Great choice " + name + "! I hope you've brought your beach gear")
-    elif response == "Dark Rainforrest":
+    elif response == "Dark Rainforest":
             print("Great choice " + name + "! I hope you've brought your raincoat and wellies.")
     else:
         print("This destination is not available today. You've now left the airport. Goodbye!\n")
