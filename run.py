@@ -6,7 +6,6 @@ yes_no = ["yes", "no"]
 response = ""
 destination = ["Tropical Island", "Dark Rainforest"]
 directions = ["left", "right", "straight ahead"]
-response = ""
 
 # Game Introduction
 """
