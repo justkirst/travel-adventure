@@ -27,7 +27,7 @@ def plane_island():
     print("The final option is to not bother with any accommodation and sleep on the beach under the stars. There is bound to be adventure and interesting people to meet with this option")
 
 while response not in accommodation:
-    response = input("Where would you like to stay?")
+    response = input("Where would you like to stay?\n")
     if response == "Beach Hut":
         print("I hope you will be safe there... The taxi driver outside the airport will take you straight there")
     elif response == "Beach Hotel":
@@ -57,7 +57,7 @@ def under_the_stars():
         print("After unwinding for a while, you decide to go exploring")        
 
 while response not in explore:
-    response = input("You've looked through the information booklets. Do you want to go the local town, an old castle or the history museum?")
+    response = input("You've looked through the information booklets. Do you want to go the local town, an old castle or the history museum?\n")
     if response =="local town":
         print("Brilliant choice. Grab your comfy shoes and sunscreen. Let's Go!")
     elif response == "Old Castle":
@@ -67,4 +67,3 @@ while response not in explore:
     else:
         print("I don't understand that. Let us try again.")
 
-        
