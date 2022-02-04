@@ -3,8 +3,10 @@ import run
 
 # Setup
 yes_no = ["yes", "no"]
+response = [""]
 directions = ["left", "right", "straight ahead"]
 accommodation = ["beach hut", "beach hotel", "on the beach under the stars"]
+explore = ["local town", "old castle", "history museum"]
 
 #game start
 """
@@ -24,7 +26,6 @@ def plane_island():
     print("The second option is the Beach Hotel that has a private pool and butler. It is very peaceful and relaxing")
     print("The final option is to not bother with any accommodation and sleep on the beach under the stars. There is bound to be adventure and interesting people to meet with this option")
 
-response = ""
 while response not in accommodation:
     response = input("Where would you like to stay?")
     if response == "Beach Hut":
@@ -43,3 +44,27 @@ def beach_hut():
         sleep(0.5)
         print("After unwinding for a while, you decide to go exploring")
 
+def beach_hotel():
+    if response == "Beach Hotel":
+        print("You have reached the Beach Hotel and get settled in nicely")
+        sleep(0.5)
+        print("After unwinding for a while, you decide to go exploring")
+
+def under_the_stars():
+    if response == "on the beach under the stars":
+        print("You have chosen your spot on the beach and found a safe spot for your belongings")
+        sleep(0.5)
+        print("After unwinding for a while, you decide to go exploring")        
+
+while response not in explore:
+    response = input("You've looked through the information booklets. Do you want to go the local town, an old castle or the history museum?")
+    if response =="local town":
+        print("Brilliant choice. Grab your comfy shoes and sunscreen. Let's Go!")
+    elif response == "Old Castle":
+        print("Good choice. Grab your comfy shoes and camera. Let's Go!")
+    elif response == "history museum":
+        print("Awesome, let's go and find out more about this island!")
+    else:
+        print("I don't understand that. Let us try again.")
+
+        
