@@ -19,10 +19,10 @@ while response not in yes_no:
     if response == "yes":
         print("Great! Let's get started!")
     elif response == "no":
-            print("You are not ready for the adventure of a lifetime… Goodbye!")
-            quit()
+        print("You are not ready for the adventure of a lifetime… Goodbye!")
+        quit()
     else:
-                print("I didn't understand that.\n")
+        print("I didn't understand that.\n")
 
 sleep(1)
 print("You have just won the lottery and decided to go on an adventure and run straight to the airport for the next available flight.")
