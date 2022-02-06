@@ -1,5 +1,7 @@
 from time import sleep
 import game_files
+from game_files.island import Island
+from game_files.rainforest import Rainforest
 
 # Setup
 yes_no = ["yes", "no"]
@@ -33,8 +35,10 @@ while response not in destination:
     response = input("Do you want to go to a Tropical Island or a Dark Rainforest?\n")
     if response == "Tropical Island":
         print("Great choice " + name + "! I hope you've brought your beach gear")
+        Island().plane_island()
     elif response == "Dark Rainforest":
-            print("Great choice " + name + "! I hope you've brought your raincoat and wellies.")
+        print("Great choice " + name + "! I hope you've brought your raincoat and wellies.")
+        Rainforest().plane_rainforest()
     else:
         print("This destination is not available today. You've now left the airport. Goodbye!\n")
         quit() 
