@@ -91,4 +91,14 @@ class Island():
                 elif response == "no":
                     print("Well that means it is the end of the adventure for you. Goodbye!")
                     quit()
+
+    def monument():
+        print("You arrive at the monument and start to look around")
+        sleep(0.25)
+        print("All of a sudden you feel a chill down your spine and notice that Jacob has started to chant")
+        print("You are not one to believe in spirits or being possessed but it does seem that this has happened to Jacob")
+        sleep(0.5)
+        print("You look around to leave but realise that you're lost and don't know where the exit is")
+        print("What direction should you go to leave?\n")
+
     
