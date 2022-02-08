@@ -1,3 +1,4 @@
+import time
 from time import sleep
 import game_files
 from game_files.island import Island
@@ -13,7 +14,11 @@ directions = ["left", "right", "straight ahead"]
 """
 Introduction part of the game for the player to start their adventure
 """
-name = input("What is your name?\n")
+name = ""
+while name == "" :
+    name = input("What is your name?\n")
+    if not name.isalpha():
+        print ("Please enter a valid name")
 print("Hi " + name + "!")
 
 while response not in yes_no:
