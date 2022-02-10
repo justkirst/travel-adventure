@@ -1,4 +1,5 @@
 from time import sleep
+import random
 
 # Setup
 yes_no = ["yes", "no"]
@@ -80,25 +81,45 @@ class Island():
                 print("You tell him your name and ask what his name is.")
                 print("The man tells you his name is Jacob and that he remembers you from the plane. He asks if you'd like to go to a local stone monument that is rich in history.")
                 sleep(0.5)
-                print("Do you want to go and see the monument?\n")
 
-            response = ""
-            while response not in yes_no:
-                print("I don't understand. Please try again")
-                response = ""
-                if response == "yes":
-                    print("Jacob pays for your drink and you leave for the monument")
-                elif response == "no":
-                    print("Well that means it is the end of the adventure for you. Goodbye!")
-                    quit()
+    def monument(self, monument):
+        self(monument)
+        response = ""
+        while response not in yes_no:
+            response = input("Do you want to go and see the monument?\n")
+        if response == "yes":
+            print("Jacob pays for your drink and you leave for the monument")
+        elif response == "no":
+            print("Well that means it is the end of the adventure for you. Goodbye!")
+            quit()
+        else:
+            print("I don't understand that. Please try again.")
+            print("You arrive at the monument and start to look around")
+            sleep(0.25)
+            print("All of a sudden you feel a chill down your spine and notice that Jacob has started to chant")
+            print("You are not one to believe in spirits or being possessed but it does seem that this has happened to Jacob")
+            sleep(0.5)
+            print("You look around to leave but realise that you're lost and don't know where the exit is")
+            print("You go straight ahead to leave and reach a locked door with a keypad...")
+            sleep(0.25)
+            print("Before you try and leave though, an assistant approaches you and asks you to go on a hiking trip.")
+            print("The assistant insists of you going and demands payment. You are getting more afraid and do as she asks.")
+            print("A ticket is given to you for the next day")
+            print("Now to try and exit the door. The assistant did tell you that it was a guessing game and you had to win to leave.")
+            sleep(1)
 
-    def monument():
-        print("You arrive at the monument and start to look around")
-        sleep(0.25)
-        print("All of a sudden you feel a chill down your spine and notice that Jacob has started to chant")
-        print("You are not one to believe in spirits or being possessed but it does seem that this has happened to Jacob")
-        sleep(0.5)
-        print("You look around to leave but realise that you're lost and don't know where the exit is")
-        print("What direction should you go to leave?\n")
-
-    
+            door_number = random.randrange(1,20)
+            guess_number = int(input("To exit the monument, you need to guess the door code number. It's between 1 and 20"))
+            door_number = random.randrange(1,20)
+            guess_number = int(input("To exit the monument, you need to guess the door code number. It's between 1 and 20"))
+                    
+            while guess_number != door_number:
+                if guess_number < door_number:
+                    print("Nice try but you need to guess a higher number")
+                    guess_number = int(input("\nTo exit the monument, you need to guess the door code number. It's between 1 and 20"))
+                else:
+                    print("Nice try but you need to guess a lower number.")
+                    guess_number = int(input("\nTo exit the monument, you need to guess the door code number. It's between 1 and 20"))
+                    
+                    print("You guessed the correct door code number and the door opens.")
+                    print("You run out of the monument as quickly as possible to get back to your accommodation.")
